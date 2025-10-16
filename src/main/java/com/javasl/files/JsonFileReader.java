@@ -30,6 +30,7 @@ public class JsonFileReader {
   }
 
   public String readJsonFile(String path) {
+    // example file is under resources, use this path: "classpath:src/main/resources/json/person.json"
     var pathToFile = Paths.get(path);
     try {
       return Files.readString(pathToFile);
